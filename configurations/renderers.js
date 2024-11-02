@@ -61,6 +61,15 @@ module.exports = {
 						type: "asset/resource"
 					}
 				]
+			},
+			{
+				test: [
+					/renderers\/app\/components\/.*\/index.js/i,
+					/renderers\/app\/hooks\/index.js/i,
+					/renderers\/app\/interface\/.*\/index.js/i,
+					/renderers\/app\/pages\/.*\/index.js/i
+				],
+				sideEffects: false
 			}
 		]
 	},
