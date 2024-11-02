@@ -10,6 +10,15 @@ module.exports = [
 			loader: require.resolve("swc-loader"),
 			options: {
 				jsc: {
+					experimental: {
+						plugins: [
+							["@swc/plugin-transform-imports", {
+								lodash: {
+									transform: "lodash/{{member}}"
+								}
+							}]
+						]
+					},
 					parser: {
 						syntax: "ecmascript",
 						jsx: true,
