@@ -1,3 +1,5 @@
+const path = require("path");
+
 const paths = require("../helpers/paths");
 const { shouldUseSourceMap, isEnvProduction } = require("../helpers/environment");
 
@@ -17,7 +19,8 @@ module.exports = [
 									transform: "lodash/{{member}}"
 								}
 							}]
-						]
+						],
+						cacheRoot: path.join(__dirname, "./node_modules/.cache/swc")
 					},
 					parser: {
 						syntax: "ecmascript",
