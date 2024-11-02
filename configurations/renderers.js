@@ -64,10 +64,10 @@ module.exports = {
 			},
 			{
 				test: [
-					/renderers\/app\/components\/.*\/index.js/i,
-					/renderers\/app\/hooks\/index.js/i,
-					/renderers\/app\/interface\/.*\/index.js/i,
-					/renderers\/app\/pages\/.*\/index.js/i
+					/.*components\/.*\/index.js/i,
+					/.*hooks\/index.js/i,
+					/.*interface\/.*\/index.js/i,
+					/.*pages\/.*\/index.js/i
 				],
 				sideEffects: false
 			}
