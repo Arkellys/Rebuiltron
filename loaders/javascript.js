@@ -20,7 +20,7 @@ module.exports = [
 								}
 							}]
 						],
-						cacheRoot: path.join(__dirname, "./node_modules/.cache/swc")
+						cacheRoot: path.join(paths.appWebpackCache, "swc")
 					},
 					parser: {
 						syntax: "ecmascript",
